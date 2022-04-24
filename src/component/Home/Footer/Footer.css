@@ -1,0 +1,31 @@
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer-social {
+  width: 50px;
+  padding: 20%;
+  background-color: aliceblue;
+}
+
+
+.footer-social-container {
+  display: flex;
+}
+.footer-top {
+  display: flex;
+  text-align: left;
+  margin-right: 5%;
+  padding-top: 5%;
+}
+.footer-top-left {
+  width: 50%;
+  margin-left: 7%;
+}
+.footer-top-right {
+  margin-left: 30%;
+}
+.footer-bottom p {
+  font-size: 12px;
+  font-weight: 400;
+}

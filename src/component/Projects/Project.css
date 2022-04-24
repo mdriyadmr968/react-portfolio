@@ -1,0 +1,58 @@
+.project-top {
+  width: 100%;
+  margin: auto;
+  color: #fff;
+    background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/src/images/bg.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.project-name {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+  padding-top: 5%;
+}
+.project-title {
+    width: 50%;
+    margin: auto;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.live-link-button {
+  background: #facf0f;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  margin-bottom: 10%;
+}
+.project-bottom {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+.project-bottom-image {
+  width: 100%;
+  padding-top: 10%;
+}
+.overview {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+.overview-details {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}

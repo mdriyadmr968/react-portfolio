@@ -1,0 +1,9 @@
+.navlink {
+     color: black !important;
+     font-size: large;
+     font-weight: bold;
+     margin-right: 30px;
+}
+.navlink:hover{
+    color: goldenrod !important;
+}

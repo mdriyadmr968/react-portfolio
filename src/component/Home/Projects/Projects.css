@@ -1,0 +1,26 @@
+.projects-top {
+  background-color: white;
+}
+.project-title {
+  margin: 1%;
+  line-height: 200%;
+}
+
+.single-project {
+  display: flex;
+  /* margin-top: 5%; */
+  padding-top: 5%;
+}
+.single-project-left {
+  width: 50%;
+}
+.single-project-right {
+  width: 50%;
+  text-align: left;
+  margin-left: 5%;
+  padding: 5%;
+  
+}
+.single-project img {
+  width: 600px;
+}
