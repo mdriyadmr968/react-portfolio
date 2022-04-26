@@ -1,10 +1,10 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 import "./Footer.css";
-import fb from "../../../images/facebook-brands.svg";
-import github from "../../../images/github-brands.svg";
-import twitter from "../../../images/twitter-brands.svg";
-import linkedin from "../../../images/linkedin-brands.svg";
+import fb from "../../../images/facebook-f-brands.png";
+import github from "../../../images/github2.png";
+import twitter from "../../../images/twitter2.png";
+import linkedin from "../../../images/linkedin2.png";
 
 const Footer = () => {
   return (
@@ -65,7 +65,8 @@ const Footer = () => {
       <div className="footer-bottom mt-5">
         <hr className="footer-hr mb-5" />
         <p className="pb-5">
-          © Copyright 2022. Made by <span className="fw-bold u">Syied bin Salim</span>
+          © Copyright 2022. Made by{" "}
+          <span className="fw-bold u">Syied bin Salim</span>
         </p>
       </div>
     </div>

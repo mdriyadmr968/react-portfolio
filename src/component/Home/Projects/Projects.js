@@ -11,12 +11,14 @@ const Projects = () => {
     navigate(`project${id}`, { replace: true });
   }
   return (
-    <div>
+    <div id="Projects">
       <div className="projects-top">
         <div>
-          <h1 className="project-heading p-5">PROJECTS</h1>
+          <h1 className="project-heading p-5 " id="projects">
+            PROJECTS
+          </h1>
           <h5 className="project-title">
-            Here you will find some of the personal and clients projects <br />{" "}
+            Here you will find some of the personal and clients projects <br />
             that I created with each project containing its own case study
           </h5>
         </div>
@@ -32,14 +34,11 @@ const Projects = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 explicabo est recusandae? Voluptas sunt accusamus aut odio dolor
                 officia assumenda labore rerum quis sequi blanditiis sed eveniet
-                exercitationem sapiente delectus eos nulla, soluta quae
-                consequuntur! Itaque, dolore error assumenda voluptatem laborum
-                natus sunt sed necessitatibus voluptas, nisi, rem ad alias!
+                exercitationem sapiente delectus eos nulla,
               </p>
               <button
                 type="button"
-                class="btn btn-warning font-weight-bold"
-                id="Projects"
+                class="btn btn-warning font-weight-bold "
                 onClick={() => handleClick(1)}
               >
                 CASE STUDY
@@ -56,14 +55,11 @@ const Projects = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 explicabo est recusandae? Voluptas sunt accusamus aut odio dolor
                 officia assumenda labore rerum quis sequi blanditiis sed eveniet
-                exercitationem sapiente delectus eos nulla, soluta quae
-                consequuntur! Itaque, dolore error assumenda voluptatem laborum
-                natus sunt sed necessitatibus voluptas, nisi, rem ad alias!
+                exercitationem sapiente delectus eos nulla,
               </p>
               <button
                 type="button"
                 class="btn btn-warning font-weight-bold"
-                id="Projects"
                 onClick={() => handleClick(2)}
               >
                 CASE STUDY
@@ -80,14 +76,11 @@ const Projects = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 explicabo est recusandae? Voluptas sunt accusamus aut odio dolor
                 officia assumenda labore rerum quis sequi blanditiis sed eveniet
-                exercitationem sapiente delectus eos nulla, soluta quae
-                consequuntur! Itaque, dolore error assumenda voluptatem laborum
-                natus sunt sed necessitatibus voluptas, nisi, rem ad alias!
+                exercitationem sapiente delectus eos nulla,
               </p>
               <button
                 type="button"
-                class="btn btn-warning font-weight-bold"
-                id="Projects"
+                class="btn btn-warning font-weight-bold "
                 onClick={() => handleClick(3)}
               >
                 CASE STUDY

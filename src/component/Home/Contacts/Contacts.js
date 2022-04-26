@@ -1,17 +1,19 @@
 import React from "react";
 import "./Contacts.css";
 
-import emailjs from "emailjs-com";
+import * as emailjs from "emailjs-com";
 import { useRef } from "react";
 
 const Contacts = () => {
   const form = useRef();
 
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("google", "template_11hcw1j", form.current, "YOUR_USER_ID")
+      .sendForm("service_a7ild39","template_3jxk5xe",e.target,"gFTChgkyuYNSn3Y7h")
       .then(
         (result) => {
           console.log(result.text);
@@ -22,7 +24,7 @@ const Contacts = () => {
       );
   };
   return (
-    <div className="container mb-5">
+    <div className="container mb-5 " id="Contact">
       <div className="row">
         <div className="col align-self-center">
           <h1 className="text-center">CONTACT</h1>
@@ -34,7 +36,7 @@ const Contacts = () => {
           <form ref={form} onSubmit={sendEmail} className="form-container">
             {/* <!-- name --> */}
             <div className="form-group">
-              <label for="name" className="label">
+              <label for="name" className="label" name="name">
                 Name
               </label>
               <input
@@ -48,7 +50,7 @@ const Contacts = () => {
 
             {/* <!-- email --> */}
             <div className="form-group">
-              <label for="email" className="label">
+              <label for="email" className="label" name="user-email">
                 Email address
               </label>
               <input
@@ -66,16 +68,12 @@ const Contacts = () => {
               </label>
               <textarea
                 className="form-control"
-                id="email_body"
+                name="message"
                 rows="5"
               ></textarea>
             </div>
 
-            <button
-              type="button"
-              class="btn btn-warning font-weight-bold"
-              id="Projects"
-            >
+            <button type="submit" class="btn btn-warning font-weight-bold">
               SUBMIT
             </button>
           </form>

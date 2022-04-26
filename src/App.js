@@ -16,6 +16,9 @@ function App() {
           <Route path="/" element={<Home />}></Route>
         </Routes>
         <Routes>
+          <Route path="/home" element={<Home />}></Route>
+        </Routes>
+        <Routes>
           <Route path="/project1" element={<Project1 />}></Route>
         </Routes>
         <Routes>
@@ -24,6 +27,9 @@ function App() {
         <Routes>
           <Route path="/project3" element={<Project3 />}></Route>
         </Routes>
+        {/* <Routes>
+          <Route path="/*" element={<Home />}></Route>
+        </Routes> */}
         <Footer></Footer>
       </Router>
     </div>

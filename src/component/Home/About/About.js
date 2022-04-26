@@ -3,10 +3,10 @@ import "./About.css";
 
 const About = () => {
   return (
-    <>
+    <div id="About" className="">
       <div className="about">
         <div>
-          <h1 className="about-me p-5">ABOUT ME</h1>
+          <h1 className="about-me p-5 ">ABOUT ME</h1>
           <h5 className="about-me-h5">
             Here you will find more information about me, what I do, and my
             current skills mostly in terms <br /> of programming and technology
@@ -24,8 +24,12 @@ const About = () => {
               I also like sharing content related to the stuff that I have
               learned over the years in Web Development so it can help other
               people of the Dev Community. Feel free to Connect or Follow me on
-              my <a rel="noreferrer" href="https://linkedin.com" target="_blank">Linkedin</a> where I post useful content related to Web Development
-              and Programming
+              my{" "}
+              <a rel="noreferrer" href="https://linkedin.com" target="_blank">
+                Linkedin
+              </a>{" "}
+              where I post useful content related to Web Development and
+              Programming
             </p>
             <p>
               I'm open to Job opportunities where I can contribute, learn and
@@ -60,7 +64,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

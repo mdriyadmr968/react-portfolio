@@ -1,5 +1,5 @@
 .banners-top {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 .social-image-container {
   width: 70px;
@@ -24,9 +24,11 @@
   margin: 5%;
   line-height: 200%;
 }
-.btn{
+.btn {
   height: 50px;
   width: 150px;
   border-radius: 5px;
   text-transform: uppercase;
+  margin-top: 5%;
+  position: relative;
 }

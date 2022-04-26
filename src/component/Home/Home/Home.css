@@ -1,4 +1,4 @@
-nav {
+/* nav {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
 }
@@ -11,4 +11,8 @@ nav {
   background-color: rgb(210, 179, 45);
   border-radius: 50%;
 }
+ */
 
+ .body {
+  width: 100%;
+}

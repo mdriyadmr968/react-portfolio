@@ -8,7 +8,7 @@ import "./Banner.css";
 
 const Banners = () => {
   return (
-    <div className="banners-top">
+    <div className="banners-top" id="home">
       <Container fluid>
         <Row>
           <Col xs={6} md={2} lg={2}>
@@ -58,11 +58,7 @@ const Banners = () => {
               and Web <br /> Applications that leads to the success of the
               overall product
             </h5>
-            <button
-              type="button"
-              class="btn btn-warning font-weight-bold"
-              id="Projects"
-            >
+            <button type="button" class="btn btn-warning font-weight-bold mb-5">
               Projects
             </button>
           </Col>

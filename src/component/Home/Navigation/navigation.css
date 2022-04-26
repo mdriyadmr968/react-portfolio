@@ -1,9 +1,30 @@
+nav {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+.body {
+  width: 100%;
+}
+.navbar-imae {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(210, 179, 45);
+  border-radius: 50%;
+}
+
 .navlink {
-     color: black !important;
-     font-size: large;
-     font-weight: bold;
-     margin-right: 30px;
+  color: black !important;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 30px;
 }
-.navlink:hover{
-    color: goldenrod !important;
+.navlink:hover {
+  color: goldenrod !important;
 }
+
+
+
+
+/* 
+testing for new hamburger menue 
+-------------------------------------------------------------------------- */

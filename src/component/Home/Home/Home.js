@@ -6,7 +6,7 @@ import Projects from '../Projects/Projects';
 import './Home.css'
 
 const Home = () => {
-    return (
+    return (  
       <div>
         <Banners></Banners>
         <About></About>

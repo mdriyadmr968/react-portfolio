@@ -1,10 +1,14 @@
 import React from "react";
 import "../Project.css";
-import project1 from '../../../images/project1.jpeg'
+import project1 from "../../../images/project1.jpeg";
 
 const Project1 = () => {
+  function componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  componentDidMount();
   return (
-    <div>
+    <div className="project-container">
       <div className="project-top">
         <p className="project-name">YUBTER</p>
         <p className="project-title">
@@ -34,6 +38,32 @@ const Project1 = () => {
         <p className="overview-details mb-5">
           Feel free to check out the Project by visiting the Live Link.
         </p>
+
+        <p className="overview  mb-4">Tools Used</p>
+        <div className="skills">
+          <div className="single-skill">HTML</div>
+          <div className="single-skill">CSS</div>
+          <div className="single-skill">JavaScript</div>
+          <div className="single-skill">React</div>
+          <div className="single-skill">SASS</div>
+          <div className="single-skill">GIT</div>
+          <div className="single-skill">Github</div>
+          <div className="single-skill">Responsive Design</div>
+          <div className="single-skill">SEO</div>
+          <div className="single-skill">Terminal</div>
+          <div className="single-skill">Express Basics</div>
+          <div className="single-skill">SQL Basics</div>
+        </div>
+        <p className="seeLive mt-4">See Live</p>
+        <button type="button" className="btn btn-warning font-weight-bold">
+          LIVE LINK
+        </button>
+        <button
+          type="button"
+          className="btn btn-white border-warning font-weight-bold ms-5"
+        >
+          GO BACK
+        </button>
       </div>
     </div>
   );
