@@ -11,7 +11,7 @@ const Banners = () => {
     <div className="banners-top" id="home">
       <Container fluid>
         <Row>
-          <Col xs={6} md={2} lg={2}>
+          <Col xs={4} md={2} lg={2}>
             <div className="social-image-container">
               <div>
                 <a

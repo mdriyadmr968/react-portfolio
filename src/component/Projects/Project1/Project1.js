@@ -55,15 +55,19 @@ const Project1 = () => {
           <div className="single-skill">SQL Basics</div>
         </div>
         <p className="seeLive mt-4">See Live</p>
-        <button type="button" className="btn btn-warning font-weight-bold">
-          LIVE LINK
-        </button>
-        <button
-          type="button"
-          className="btn btn-white border-warning font-weight-bold ms-5"
-        >
-          GO BACK
-        </button>
+        <a href="">
+          <button type="button" className="btn btn-warning font-weight-bold">
+            LIVE LINK
+          </button>
+        </a>
+        <a href="/">
+          <button
+            type="button"
+            className="btn btn-white border-warning font-weight-bold ms-5"
+          >
+            GO BACK
+          </button>
+        </a>
       </div>
     </div>
   );

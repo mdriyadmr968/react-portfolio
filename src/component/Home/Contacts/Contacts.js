@@ -24,7 +24,7 @@ const Contacts = () => {
       );
   };
   return (
-    <div className="container mb-5 " id="Contact">
+    <div className="container mt-5 mb-5 pt-5 " id="Contact">
       <div className="row">
         <div className="col align-self-center">
           <h1 className="text-center">CONTACT</h1>
