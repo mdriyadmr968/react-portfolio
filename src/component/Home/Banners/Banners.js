@@ -58,9 +58,15 @@ const Banners = () => {
               and Web <br /> Applications that leads to the success of the
               overall product
             </h5>
-            <button type="button" class="btn btn-warning font-weight-bold mb-5">
-              Projects
-            </button>
+
+            <a href="https://drive.google.com/uc?export=download&id=1uWw3XMYofzOE-nnvZScalmbE-NSakVZ5">
+              <button
+                type="button"
+                class="resume-button  btn-warning font-weight-bold mb-5"
+              >
+                DOWNLOAD RESUME
+              </button>
+            </a>
           </Col>
         </Row>
       </Container>

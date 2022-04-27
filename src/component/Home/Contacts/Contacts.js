@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contacts.css";
 
 import * as emailjs from "emailjs-com";
 import { useRef } from "react";
 
+const Result = () => {
+  return (
+    <p className="successfull-message">Your message has been successfully sent. I will replay soon</p>
+  )
+}
+
 const Contacts = () => {
+  const [result, showResult] = useState(false);
   const form = useRef();
-
-
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_a7ild39","template_3jxk5xe",e.target,"gFTChgkyuYNSn3Y7h")
+      .sendForm(
+        "service_a7ild39",
+        "template_3jxk5xe",
+        e.target,
+        "gFTChgkyuYNSn3Y7h"
+      )
       .then(
         (result) => {
           console.log(result.text);
@@ -22,6 +32,9 @@ const Contacts = () => {
           console.log(error.text);
         }
       );
+      e.target.reset();
+      showResult(true);
+
   };
   return (
     <div className="container mt-5 mb-5 pt-5 " id="Contact">
@@ -76,6 +89,7 @@ const Contacts = () => {
             <button type="submit" class="btn btn-warning font-weight-bold">
               SUBMIT
             </button>
+            <div className="row">{result ? <Result /> : null}</div>
           </form>
         </div>
       </div>

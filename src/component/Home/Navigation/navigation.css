@@ -73,7 +73,7 @@ li {
 }
 
 .menu li {
-  margin-top: 3%;
+  margin-top:20px;
   padding-right: 14px;
 
 }
@@ -113,14 +113,6 @@ input[type="checkbox"] {
   }
   .hamburger {
     display: block;
-  }
-  /* .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  } */
-  .dropdown li:hover {
-    /* background-color: #4c9e9e; */
   }
 }
 

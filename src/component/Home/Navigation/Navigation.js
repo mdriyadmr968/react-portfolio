@@ -6,15 +6,15 @@ const Navigation = () => {
   return (
     <div className="navbar-container ps-5 pe-5 sticky-top bg-white">
       <nav className="navbar">
-        <div className="logo">
+        <div className="logo ">
           <a href="/">
             <Image
               className="navbar-imae"
               src={require("../../../images/prof.jpg")}
             ></Image>
-            <a href="/" className="nav-name" style={{ textDecoration: "none" }}>
-              Syied Bin Salim
-            </a>
+          </a>
+          <a href="/" className="nav-name" style={{ textDecoration: "none" }}>
+            Syied Bin Salim
           </a>
         </div>
         <div>
