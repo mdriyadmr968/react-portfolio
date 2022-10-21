@@ -4,6 +4,7 @@ import fb from "../../../images/facebook-brands.svg";
 import linkedin from "../../../images/linkedin-brands.svg";
 import twitter from "../../../images/twitter-brands.svg";
 import github from "../../../images/github-brands.svg";
+import { Typewriter } from "react-simple-typewriter";
 import "./Banner.css";
 
 const Banners = () => {
@@ -15,16 +16,16 @@ const Banners = () => {
             <div className="social-image-container">
               <div>
                 <a
-                  href="http://facebook.com"
+                  href="https://www.facebook.com/md.riyad.9693001/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Image src={fb} alt="" className="social-image" />
                 </a>
-              </div>
+              </div>  
               <div>
                 <a
-                  href="http://linkedin.com"
+                  href="https://www.linkedin.com/in/mohammad-syied-bin-salim-32136a227"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -33,7 +34,7 @@ const Banners = () => {
               </div>
               <div>
                 <a
-                  href="http://twitter.com"
+                  href="https://twitter.com/RIYAD06342231"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -42,7 +43,7 @@ const Banners = () => {
               </div>
               <div>
                 <a
-                  href="http://github.com"
+                  href="https://github.com/mdriyadmr968"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -52,14 +53,28 @@ const Banners = () => {
             </div>
           </Col>
           <Col xs={6} md={8}>
-            <h1 className="name">HEY, I'M SYIED BIN SALIM</h1>
+            <h1 className="name">
+              HEY,{" "}
+              <span style={{ color: "", fontWeight: "" }}>
+                {/* Style will be inherited from the parent element */}
+                <Typewriter
+                  words={["I'M SYIED BIN SALIM"]}
+                  loop={1}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={150}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </h1>
             <h5 className="description">
               A Frontend focused Web Developer building the Frontend of Websites
               and Web <br /> Applications that leads to the success of the
               overall product
             </h5>
 
-            <a href="https://drive.google.com/uc?export=download&id=1uWw3XMYofzOE-nnvZScalmbE-NSakVZ5">
+            <a href="https://drive.google.com/uc?export=download&id=1zqBDdWLI6oQyP-6slPQsKl6zmuC5FcRF">
               <button
                 type="button"
                 class="resume-button  btn-warning font-weight-bold mb-5"

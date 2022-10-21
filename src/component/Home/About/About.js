@@ -21,15 +21,8 @@ const About = () => {
               product. Check out some of my work in the Projects section.
             </p>
             <p>
-              I also like sharing content related to the stuff that I have
-              learned over the years in Web Development so it can help other
-              people of the Dev Community. Feel free to Connect or Follow me on
-              my{" "}
-              <a rel="noreferrer" href="https://linkedin.com" target="_blank">
-                Linkedin
-              </a>{" "}
-              where I post useful content related to Web Development and
-              Programming
+              I am also comportable with backend. I can build small to medium
+              full stack project.
             </p>
             <p>
               I'm open to Job opportunities where I can contribute, learn and
@@ -37,13 +30,14 @@ const About = () => {
               experience then don't hesitate to contact me.
             </p>
 
-            <button
-              type="button"
-              className="btn btn-warning font-weight-bold"
-              id="contacts"
-            >
-              CONTACTS
-            </button>
+            <a href="/#Contact">
+              <button
+                type="button"
+                className="btn btn-warning font-weight-bold"
+              >
+                CONTACTS
+              </button>
+            </a>
           </div>
           <div className="about-right">
             <h1 className="mb-4">MY SKILLS</h1>
@@ -51,15 +45,19 @@ const About = () => {
               <div className="skills__skill">HTML</div>
               <div className="skills__skill">CSS</div>
               <div className="skills__skill">JavaScript</div>
-              <div className="skills__skill">React</div>
-              <div className="skills__skill">SASS</div>
+              <div className="skills__skill">ReactJS</div>
+              <div className="skills__skill">Bootstrap</div>
+              <div className="skills__skill">Material UI</div>
+              <div className="skills__skill">Node JS</div>
+              <div className="skills__skill">Express js</div>
+              <div className="skills__skill">Redux</div>
+              <div className="skills__skill">Typescript</div>
+              <div className="skills__skill">React Native</div>
+              <div className="skills__skill">Mongodb</div>
+              <div className="skills__skill">Firebase</div>
               <div className="skills__skill">GIT</div>
               <div className="skills__skill">Github</div>
               <div className="skills__skill">Responsive Design</div>
-              <div className="skills__skill">SEO</div>
-              <div className="skills__skill">Terminal</div>
-              <div className="skills__skill">Express Basics</div>
-              <div className="skills__skill">SQL Basics</div>
             </div>
           </div>
         </div>

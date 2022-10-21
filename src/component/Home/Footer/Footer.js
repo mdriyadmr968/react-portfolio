@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="footer-social-container">
             <div>
               <a
-                href="http://facebook.com"
+                href="https://www.facebook.com/md.riyad.9693001/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div>
               <a
-                href="http://linkedin.com"
+                href="https://www.linkedin.com/in/mohammad-syied-bin-salim-32136a227"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
             <div>
               <a
-                href="http://twitter.com"
+                href="https://twitter.com/RIYAD06342231"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <div>
               <a
-                href="http://github.com"
+                href="https://github.com/mdriyadmr968"
                 target="_blank"
                 rel="noopener noreferrer"
               >
