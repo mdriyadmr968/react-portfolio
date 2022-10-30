@@ -1,5 +1,5 @@
 .form-container {
-  font-size: 50.5%;
+  font-size: 50%;
   line-height: 1.5;
   box-sizing: inherit;
   font-family: inherit;
@@ -9,7 +9,7 @@
   text-align: right;
   width: 70%;
   border-radius: 5px;
-  margin: 5rem auto 0 auto;
+  margin: 0 auto 0;
 }
 
 .label {

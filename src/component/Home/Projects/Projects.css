@@ -19,9 +19,33 @@
   text-align: left;
   margin-left: 5%;
   padding: 5%;
-  
 }
 .single-project img {
   width: 100%;
-  margin-left: 15%;
+  /* margin-left: 15%;
+  padding-top: 15%; */
 }
+
+/* Styles for  image scroll from top to bottom on hover */
+.image-wrap {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 10%;
+  
+}
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: all 2s ease-in-out;
+  border: 10px solid #D3DCFA;
+  border-radius: 5%;
+
+}
+.image-wrap:hover img {
+  object-position: bottom center;
+}
+
+

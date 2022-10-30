@@ -3,6 +3,7 @@ import "./Projects.css";
 import project1 from "../../../images/project1.jpeg";
 import project2 from "../../../images/project2.jpeg";
 import project3 from "../../../images/project3.jpeg";
+import largeimage from "../../../images/large_image.png";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
@@ -14,19 +15,24 @@ const Projects = () => {
     <div id="Projects">
       <div className="projects-top">
         <div>
-          <h1 className="project-heading p-5 " id="projects">
+          <h1 className="project-heading p-3 " id="projects">
             PROJECTS
           </h1>
           <h5 className="project-title">
-            Here you will find some of the personal and clients projects <br />
+            Here you will find some of the personal projects <br />
             that I created with each project containing its own case study
           </h5>
         </div>
         {/* single project details  */}
         <div>
           <div className="single-project">
-            <div className="projects-image single-project-left">
+            {/* <div className="projects-image single-project-left">
               <img src={project2} alt="" />
+            </div> */}
+            <div class="image-wrap">
+              <a href="/">
+                <img src={largeimage} />
+              </a>
             </div>
             <div className="single-project-right">
               <h1>Yubter</h1>

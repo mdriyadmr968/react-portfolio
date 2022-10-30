@@ -69,6 +69,7 @@ const Project1 = () => {
           </button>
         </a>
       </div>
+      
     </div>
   );
 };
