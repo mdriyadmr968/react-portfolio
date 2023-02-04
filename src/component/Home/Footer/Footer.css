@@ -8,19 +8,18 @@
   /* background-color: aliceblue; */
 }
 
-
 .footer-social-container {
   display: flex;
 }
 .footer-top {
+  width: 80%;
+  margin: auto;
+  padding-top: 5%;
   display: flex;
   text-align: left;
-  margin-right: 5%;
-  padding-top: 5%;
 }
 .footer-top-left {
-  width: 50%;
-  margin-left: 7%;
+  width: 70%;
 }
 .footer-top-right {
   margin-left: 30%;
@@ -28,4 +27,22 @@
 .footer-bottom p {
   font-size: 12px;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-top-left {
+    width: 70%;
+    margin: 0 2% 0 2%;
+    padding: 0;
+  }
+  .footer-top-right {
+    width: 10%;
+
+    margin: 0;
+    padding: 0;
+  }
+  .footer-social-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

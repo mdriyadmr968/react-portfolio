@@ -3,31 +3,24 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div id="About" className="">
-      <div className="about">
+    <div id="About" className="about_wrapper">
+      <div className="about-container">
         <div>
-          <h1 className="about-me p-5 ">ABOUT ME</h1>
-          <h5 className="about-me-h5">
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms <br /> of programming and technology
-          </h5>
+          <h1 className="about-me pt-5 ">ABOUT ME</h1>
         </div>
         <div className="about-top">
           <div className="about-left">
             <h3>Get to know me!</h3>
-            <p>
-              I'm a Frontend Web Developer building the Front-end of Websites
-              and Web Applications that leads to the success of the overall
-              product. Check out some of my work in the Projects section.
-            </p>
-            <p>
-              I am also comportable with backend. I can build small to medium
-              full stack project.
-            </p>
-            <p>
-              I'm open to Job opportunities where I can contribute, learn and
-              grow. If you have a good opportunity that matches my skills and
-              experience then don't hesitate to contact me.
+            <p className="about-description">
+              "I am a Junior Web Developer with a passion for creating intuitive
+              and visually appealing websites. <br />I have a strong foundation
+              in JavaScript & ReactJS, and have experience working with both
+              front-end and back-end technologies.
+              <br />I I am always eager to learn and experiment with new
+              technologies to deliver exceptional results.
+              <br />
+              II am eager to bring my skills and creativity to real world
+              projects.
             </p>
 
             <a href="/#Contact">

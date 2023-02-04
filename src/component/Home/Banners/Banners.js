@@ -22,7 +22,7 @@ const Banners = () => {
                 >
                   <Image src={fb} alt="" className="social-image" />
                 </a>
-              </div>  
+              </div>
               <div>
                 <a
                   href="https://www.linkedin.com/in/mohammad-syied-bin-salim-32136a227"
@@ -54,11 +54,10 @@ const Banners = () => {
           </Col>
           <Col xs={6} md={8}>
             <h1 className="name">
-              HEY,{" "}
+              Hi, I'M <br />
               <span style={{ color: "", fontWeight: "" }}>
-                {/* Style will be inherited from the parent element */}
                 <Typewriter
-                  words={["I'M SYIED BIN SALIM"]}
+                  words={["SYIED BIN SALIM"]}
                   loop={1}
                   cursor
                   cursorStyle="|"
@@ -69,12 +68,15 @@ const Banners = () => {
               </span>
             </h1>
             <h5 className="description">
-              A Frontend focused Web Developer building the Frontend of Websites
-              and Web <br /> Applications that leads to the success of the
-              overall product
+              "A junior Web Developer who can learn quickly and adapt to new
+              technologies, tools, and frameworks to stay ahead of the curve in
+              a rapidly evolving field."
             </h5>
 
-            <a href="https://drive.google.com/uc?export=download&id=1zqBDdWLI6oQyP-6slPQsKl6zmuC5FcRF">
+            <a
+              href="https://drive.google.com/file/d/1VIsniefY9GdmXrwSJSPpWHLwSHBii2dQ/view?usp=share_link"
+              target="_blank"
+            >
               <button
                 type="button"
                 class="resume-button  btn-warning font-weight-bold mb-5"

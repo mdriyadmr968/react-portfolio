@@ -34,36 +34,39 @@
 }
 .resume-button {
   background: #facf0f;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: inline-block;
-    font-weight: 700;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
-    transition: transform .3s;
-    padding: 2% 5%;
-
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  padding: 2% 5%;
 }
 
 @media (max-width: 768px) {
-  
   .social-image-container {
-    width: 50px;
-    height: 300px;
+    /* width: 20px;
+    height: 300px; */
     background-color: white;
     margin-top: 40%;
+    padding: 0% !important;
     box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
   }
   .name {
     font-size: 30px;
     font-weight: 300px;
     color: #111111;
-    margin-top: 10%;
+    margin-top: 25%;
   }
   .description {
+    width: 300px;
     font-size: 20px;
-    margin: 5%;
+    text-align: center;
+    margin-left: -20%;
+    padding: 20% 0 20% 0;
+
     line-height: 100%;
   }
 }
