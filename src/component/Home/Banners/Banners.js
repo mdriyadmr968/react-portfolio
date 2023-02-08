@@ -74,7 +74,7 @@ const Banners = () => {
             </h5>
 
             <a
-              href="https://drive.google.com/file/d/1VIsniefY9GdmXrwSJSPpWHLwSHBii2dQ/view?usp=share_link"
+              href="https://drive.google.com/file/d/1FlvWR4zvNp4gf373y11Bkd9c8t1le5Oq/view?usp=share_link"
               target="_blank"
             >
               <button
