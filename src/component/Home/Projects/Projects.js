@@ -81,7 +81,7 @@ const Projects = () => {
               <div class="hover-text">Hover</div>
             </div>
             <div className="single-project-right">
-              <h1>CarPlanet</h1>
+              <h1>DreamWorld</h1>
               <p className="project-description">
                 ● A simple tour booking website.
                 <br /> ● Users can book tours, see details about tourist spots.
@@ -126,7 +126,7 @@ const Projects = () => {
               <div class="hover-text">Hover</div>
             </div>
             <div className="single-project-right">
-              <h1>CarPlanet</h1>
+              <h1>HappyDoc</h1>
               <p className="project-description">
                 ● A healthcare website.
                 <br /> ● Users can choose a service according to their needs.
