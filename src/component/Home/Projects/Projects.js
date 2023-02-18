@@ -14,7 +14,7 @@ const Projects = () => {
     <div className="Projects">
       <div className="projects-top">
         <div>
-          <h1 className="project-heading p-3 " id="projects">
+          <h1 className="project-heading p-3 " id="Projects">
             PROJECTS
           </h1>
           <h5 className="project-title">
