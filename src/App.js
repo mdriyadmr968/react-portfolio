@@ -1,38 +1,41 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./component/Home/Footer/Footer";
-import Home from "./component/Home/Home/Home";
-import Navigation from "./component/Home/Navigation/Navigation";
-import Project1 from "./component/Projects/Project1/Project1";
-import Project2 from "./component/Projects/Project2/Project2";
-import Project3 from "./component/Projects/Project3/Project3";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="App">
-      <Router>
-        <Navigation></Navigation>
+    <>
+      <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+        theme={"light"}
+        // toastStyle={
+        //   appCtx.isDarkMode
+        //     ? { backgroundColor: "#27272A", color: "#E2E8F0" }
+        //     : { backgroundColor: "#F8FAFC", color: "#1F2937" }
+        // }
+      />
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<Home />} />
         </Routes>
-        <Routes>
-          <Route path="/home" element={<Home />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/project1" element={<Project1 />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/project2" element={<Project2 />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/project3" element={<Project3 />}></Route>
-        </Routes>
-        {/* <Routes>
-          <Route path="/*" element={<Home />}></Route>
-        </Routes> */}
-        <Footer></Footer>
-      </Router>
-    </div>
+      </BrowserRouter>
+    </>
   );
 }
 
