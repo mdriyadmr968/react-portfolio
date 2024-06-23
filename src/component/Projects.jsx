@@ -60,6 +60,7 @@ const Projects = () => {
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
                     href="https://talewallet.com/"
                     target="__blank"
+                    rel="noreferrer"
                   >
                     View Project
                     <svg
@@ -118,6 +119,7 @@ const Projects = () => {
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
                     href="https://taleinvest.io/"
                     target="__blank"
+                    rel="noreferrer"
                   >
                     View Project
                     <svg
@@ -173,6 +175,7 @@ const Projects = () => {
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
                     href="https://play.google.com/store/apps/details?id=com.talewallet"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View Project
                     <svg

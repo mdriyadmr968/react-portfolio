@@ -255,6 +255,7 @@ const EducationAndExperience = () => {
                           <div className="flex flex-col justify-end gap-4 lg:flex-row lg:items-center lg:gap-12">
                             <span className="text-xl font-semibold">
                               Software Development Intern in NEXTTALES
+                              TECHNOLOGY PRIVATE LIMITED
                             </span>
                           </div>
                           <p>
@@ -329,7 +330,8 @@ const EducationAndExperience = () => {
                         <div className="mt-7">
                           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-12">
                             <span className="text-xl font-semibold">
-                              Assosiate Software Enginner in Nexttales
+                              Assosiate Software Enginner in NEXTTALES
+                              TECHNOLOGY PRIVATE LIMITED
                             </span>
                           </div>
                           <p>

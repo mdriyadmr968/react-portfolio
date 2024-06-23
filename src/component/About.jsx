@@ -80,6 +80,7 @@ const About = () => {
                     <li class="shrink-0">
                       <a
                         href="https://www.linkedin.com/in/mohammad-syied-bin-salim-32136a227"
+                        rel="noreferrer"
                         target="_blank"
                       >
                         <FontAwesomeIcon
@@ -99,6 +100,7 @@ const About = () => {
                     <li class="shrink-0">
                       <a
                         href="https://discord.com/users/mdriyad1743"
+                        rel="noreferrer"
                         target="_blank"
                       >
                         <FontAwesomeIcon
@@ -110,6 +112,7 @@ const About = () => {
                     <li class="shrink-0">
                       <a
                         href="https://twitter.com/RIYAD06342231"
+                        rel="noreferrer"
                         target="_blank"
                       >
                         <FontAwesomeIcon
@@ -121,6 +124,7 @@ const About = () => {
                     <li class="shrink-0">
                       <a
                         href="https://www.facebook.com/profile.php?id=61554031739106&mibextid=ZbWKwL"
+                        rel="noreferrer"
                         target="_blank"
                       >
                         <FontAwesomeIcon

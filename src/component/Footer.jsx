@@ -19,27 +19,27 @@ const Footer = () => {
       <div class="space-y-2.5 font-semibold flex-1  ">
         <ul class="flex justify-center  flex-wrap items-center gap-5 ">
           <li class="shrink-0">
-            <a href="/#" target="_blank">
+            <a href="/#" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} className="w-6 h-6" />
             </a>
           </li>
           <li class="shrink-0">
-            <a href="/#" target="_blank">
+            <a href="/#" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faSquareGithub} className="w-6 h-6 " />
             </a>
           </li>
           <li class="shrink-0">
-            <a href="/#" target="_blank">
+            <a href="/#" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faDiscord} className="w-6 h-6 " />
             </a>
           </li>
           <li class="shrink-0">
-            <a href="/#" target="_blank">
+            <a href="/#" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faSquareXTwitter} className="w-6 h-6 " />
             </a>
           </li>
           <li class="shrink-0">
-            <a href="/#" target="_blank">
+            <a href="/#" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faSquareFacebook} className="w-6 h-6 " />
             </a>
           </li>
