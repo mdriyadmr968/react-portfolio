@@ -90,7 +90,11 @@ const About = () => {
                       </a>
                     </li>
                     <li class="shrink-0">
-                      <a href="https://github.com/mdriyadmr968" target="_blank">
+                      <a
+                        href="https://github.com/mdriyadmr968"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <FontAwesomeIcon
                           icon={faSquareGithub}
                           className="w-6 h-6 text-[#7C238B]"
