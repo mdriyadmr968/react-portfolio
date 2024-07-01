@@ -44,13 +44,33 @@ const About = () => {
                     Hi! I'm Syied Bin Salim
                   </h2>
                   <p class="mt-6 text-[#7780a1]">
-                    " I am a Software Developer with a passion for creating
-                    intuitive and visually appealing web and mobile application.
-                    I have strong foundation in JavaScript ,React & Nextjs and
-                    have experience working on both front-end and back-end
-                    technology. I am always eager to learn and experiment with
-                    new technologies to deliver exceptional results. I am eager
-                    to bring my skills and creativity to real world projects. "
+                    "As a Software Developer, I am driven by a passion for
+                    crafting intuitive and visually captivating web and mobile
+                    applications. With a strong foundation in JavaScript, React,
+                    and Next.js, I possess the versatility to excel in both
+                    front-end and back-end development. <br />
+                  </p>
+                  <p class="mt-2 text-[#7780a1]">
+                    Constantly seeking to expand my knowledge, I am eager to
+                    experiment with new technologies and methodologies to
+                    deliver exceptional results. My commitment to continuous
+                    learning allows me to stay at the forefront of industry
+                    trends, ensuring that I can provide innovative solutions to
+                    real-world challenges.
+                  </p>
+                  <p class="mt-2 text-[#7780a1]">
+                    Through my diverse project experience, I have honed my
+                    ability to translate complex ideas into user-friendly
+                    interfaces that seamlessly blend form and function. I thrive
+                    on the challenge of transforming abstract concepts into
+                    tangible, impactful digital experiences.
+                  </p>
+                  <p class="mt-2 text-[#7780a1]">
+                    With a keen eye for detail and a collaborative mindset, I am
+                    excited to bring my skills and creativity to your
+                    organization, contributing to the development of
+                    cutting-edge applications that push the boundaries of what's
+                    possible. "
                   </p>
                 </div>
               </div>

@@ -38,23 +38,24 @@ const Projects = () => {
               data-aos="fade-up"
             >
               <div className="order-2 p-10 md:p-12 lg:flex-1 lg:order-1">
-                <p className="text-purple text-[22px] font-bold">Tale Wallet</p>
                 <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
-                  A Multi-Chain Crypto Wallet
+                  Tale Wallet
                 </p>
                 <p className="text-gray max-w-[420px] mt-3 md:mt-5">
-                  Buy, sell, and swap thousands of crypto tokens.
+                  A multi-chain crypto wallet with ability to Buy, sell, and
+                  swap thousands of crypto tokens. Users can discover and invest
+                  in instruments like Crypto Baskets and Indexes. Users can
+                  track the current market condition. The Wallet Support’s more
+                  than five chains and 500+ verified tokens which gives a bird’s
+                  eye view to users about the current market condition.
                 </p>
                 <p className="text-gray max-w-[420px] mt-2">
-                  Discover and invest in instruments like Crypto Baskets and
-                  Indexes.
+                  <span className="font-semibold">
+                    Technology used in this app:
+                  </span>{" "}
+                  React, Bootstrap, Web3.js, Ethers and many more
                 </p>
-                <p className="text-gray max-w-[420px] mt-2">
-                  5+ chains Supported
-                </p>
-                <p className="text-gray max-w-[420px] mt-2">
-                  500+ Verified Tokens
-                </p>
+
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
@@ -97,21 +98,21 @@ const Projects = () => {
               data-aos="fade-up"
             >
               <div className="order-2 p-10 md:p-12 lg:flex-1 lg:order-1">
-                <p className="text-warning text-[22px] font-bold">
+                <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
                   Tale Invest
                 </p>
-                <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
-                  Invest in Crypto with Experts
-                </p>
                 <p className="text-gray max-w-[420px] mt-3 md:mt-5">
-                  Invest Through Trustless and Permissionless Onchain Crypto
-                  Funds, Indexes and Baskets.
+                  This web app brings the investors and fund-managers under the
+                  same hud where fund-managers can create and manage different
+                  investment plans like crypto- funds, crypto- baskets for the
+                  user and also perform trade on those funds for maximizing the
+                  profit.
                 </p>
                 <p className="text-gray max-w-[420px] mt-2">
-                  Discover, Evaluate, and Invest on-chain with experts
-                </p>
-                <p className="text-gray max-w-[420px] mt-2">
-                  Passive Investments optimize for returns.
+                  <span className="font-semibold">
+                    Technology used in this app:
+                  </span>{" "}
+                  React, Bootstrap, Web3.js, Ethers and many more
                 </p>
 
                 <div className="inline-block mt-8">
@@ -156,18 +157,18 @@ const Projects = () => {
               data-aos="fade-up"
             >
               <div className="order-2 p-10 md:p-12 lg:flex-1 lg:order-1">
-                <p className="text-[#453DB1] text-[22px] font-bold">
+                <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
                   TaleWallet Mobile app
                 </p>
-                <a
-                  className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5"
-                  href="/#"
-                >
-                  Mobile Version of Talewallet web app
-                </a>
                 <p className="text-gray max-w-[420px] mt-3 md:mt-5">
-                  All features of Talewallet is also reflected in this mobile
-                  app.
+                  A full pledge mobile app where all the features of tale-wallet
+                  have been reflected.
+                </p>
+                <p className="text-gray max-w-[420px] mt-2">
+                  <span className="font-semibold">
+                    Technology used in this app:
+                  </span>{" "}
+                  React-native, tailwind-css, expo and many more
                 </p>
 
                 <div className="inline-block mt-8">
