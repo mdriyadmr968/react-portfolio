@@ -13,9 +13,9 @@ const Home = () => {
       <Navbar />
       <Banner />
       <About />
-      <EducationAndExperience />
       <Skills />
       <Projects />
+      <EducationAndExperience />
       <Footer />
     </div>
   );
