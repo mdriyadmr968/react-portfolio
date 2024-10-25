@@ -60,7 +60,7 @@ const Projects = () => {
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
-                    href="demo/tale_wallet_web_app"
+                    href="demo-login/tale_wallet_web_app"
                     target="__blank"
                     rel="noreferrer"
                   >
@@ -119,7 +119,7 @@ const Projects = () => {
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
-                    href="demo/tale_invest_web_app"
+                    href="demo-login/tale_invest_web_app"
                     target="__blank"
                     rel="noreferrer"
                   >
@@ -175,7 +175,7 @@ const Projects = () => {
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
-                    href="demo/tale_wallet_mobile_app"
+                    href="demo-login/tale_wallet_mobile_app"
                     target="_blank"
                     rel="noreferrer"
                   >
