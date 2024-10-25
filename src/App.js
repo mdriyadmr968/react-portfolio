@@ -34,7 +34,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="demo/:id" element={<DemoLogin />} />
+          <Route path="demo-login/:id" element={<DemoLogin />} />
         </Routes>
       </BrowserRouter>
     </>
