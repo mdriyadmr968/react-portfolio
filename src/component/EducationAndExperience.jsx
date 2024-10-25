@@ -116,7 +116,7 @@ const EducationAndExperience = () => {
                           </div>
                           <p>
                             <span className="font-semibold text-purple">
-                              May,2023 - Jun-2024
+                              May,2023 - July-2024
                             </span>
                           </p>
                           <p className="mt-5 text-gray">

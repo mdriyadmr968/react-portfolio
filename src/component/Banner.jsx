@@ -1,7 +1,7 @@
 import React from "react";
 
 const Banner = () => {
-    const fileID = "1g4Jsm2sHPE1KB0NGP5dZMQhlHrDR6Z23"; 
+    const fileID = "16CKgOBaMGc0UIhldqtbPrqPqqAcjBnlQ"; 
     const downloadLink = `https://drive.google.com/uc?export=download&id=${fileID}`;
       const handleDownload = (event) => {
         event.preventDefault();
@@ -37,7 +37,7 @@ const Banner = () => {
                     <div class="inline-block">
                       <a
                         class="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5  duration-300 border-2 border-[#994FF5] bg-[#994FF5] hover:bg-[#7e47c1] text-white  "
-                        href="/#"
+                        href="https://www.upwork.com/freelancers/~01e3de116879853a55?mp_source=share"
                       >
                         <svg
                           width="24"

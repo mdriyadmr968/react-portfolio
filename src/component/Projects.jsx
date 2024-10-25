@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Projects = () => {
   const [viewAll, setViewAll] = useState(false);
+ 
   return (
     <div className="section" id="projects">
       <section className="py-16 md:py-24 w-[95%]  md:max-xl:w-[90%] 2xl:w-[80%] mx-auto">
@@ -59,7 +60,7 @@ const Projects = () => {
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
-                    href="https://talewallet.com/"
+                    href={`demo-login/tale_wallet_web_app`}
                     target="__blank"
                     rel="noreferrer"
                   >
@@ -118,7 +119,7 @@ const Projects = () => {
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
-                    href="https://taleinvest.io/"
+                    href={`demo-login/tale_invest_web_app`}
                     target="__blank"
                     rel="noreferrer"
                   >
@@ -174,7 +175,7 @@ const Projects = () => {
                 <div className="inline-block mt-8">
                   <a
                     className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
-                    href="https://play.google.com/store/apps/details?id=com.talewallet"
+                    href={`demo-login/tale_wallet_mobile_app`}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -208,6 +209,282 @@ const Projects = () => {
                 />
               </div>
             </div>
+            {viewAll && (
+              <>
+                <div
+                  className="flex flex-wrap lg:flex-nowrap items-stretch border border-gray-300 aos-init"
+                  data-aos="fade-up"
+                >
+                  <div className="order-2 p-10 md:p-12 lg:flex-1 lg:order-1">
+                    <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
+                      CarPlanet
+                    </p>
+                    <p className="text-gray max-w-[420px] mt-3 md:mt-5">
+                      A car purchasing website. Users can purchase cars, give
+                      reviews. admin can manage, add or remove all car details.
+                      admin can approve users purchase.
+                    </p>
+                    <p className="text-gray max-w-[420px] mt-2">
+                      <span className="font-semibold">
+                        Technology used in this app:
+                      </span>{" "}
+                      REACT BOOTSTRAP FIREBASE MONGODB NODEJS Heroku
+                    </p>
+
+                    <div className="inline-block mt-8">
+                      <a
+                        className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://carplanet-905af.web.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View Project
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        className="my-2 flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://github.com/mdriyadmr968/Car-Planet-Client"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View client side code
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://github.com/mdriyadmr968/-mdriyadmr968-Car-Planet-Server"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View server side code
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full lg:order-2 order-1">
+                    <img
+                      alt=""
+                      fetchpriority="high"
+                      width={1000}
+                      height={750}
+                      decoding="async"
+                      data-nimg={1}
+                      className="object-cover w-full h-full mx-auto"
+                      style={{ color: "transparent" }}
+                      src="/images/carplanet.png"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  className="flex flex-wrap lg:flex-nowrap items-stretch border border-gray-300 aos-init"
+                  data-aos="fade-up"
+                >
+                  <div className="order-2 p-10 md:p-12 lg:flex-1 lg:order-1">
+                    <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
+                      DreamWorld
+                    </p>
+                    <p className="text-gray max-w-[420px] mt-3 md:mt-5">
+                      A simple tour booking website. Users can book tours, see
+                      details about tourist spots. Admin can create, update or
+                      delete the tourist spot. Admin can approve the pending
+                      order of customers.
+                    </p>
+                    <p className="text-gray max-w-[420px] mt-2">
+                      <span className="font-semibold">
+                        Technology used in this app:
+                      </span>{" "}
+                      Reactjs Nodejs Firebase Bootstrap
+                    </p>
+
+                    <div className="inline-block mt-8">
+                      <a
+                        className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://dream-world-892da.web.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View Project
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        className="my-2 flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://github.com/mdriyadmr968/Dream-world"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View client side code
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://github.com/mdriyadmr968/DreamWorld-server"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View server side code
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full lg:order-2 order-1">
+                    <img
+                      alt=""
+                      fetchpriority="high"
+                      width={1000}
+                      height={750}
+                      decoding="async"
+                      data-nimg={1}
+                      className="object-cover w-full h-full mx-auto"
+                      style={{ color: "transparent" }}
+                      src="/images/dream.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="flex flex-wrap lg:flex-nowrap items-stretch border border-gray-300 aos-init"
+                  data-aos="fade-up"
+                >
+                  <div className="order-2 p-10 md:p-12 lg:flex-1 lg:order-1">
+                    <p className="font-bold text-lg/normal md:text-2xl/normal lg:text-[30px]/normal inline-block mt-5">
+                      HappyDoc
+                    </p>
+                    <p className="text-gray max-w-[420px] mt-3 md:mt-5">
+                      A healthcare website. User can choose health service
+                      according to their needs.
+                    </p>
+                    <p className="text-gray max-w-[420px] mt-2">
+                      <span className="font-semibold">
+                        Technology used in this app:
+                      </span>{" "}
+                      HTML, CSS, REACT, BOOTSTRAP, FIREBASE, MONGODB.
+                    </p>
+
+                    <div className="inline-block mt-8">
+                      <a
+                        className="flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://magenta-cassata-224eef.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View Project
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        className="my-2 flex items-center gap-2.5 py-3.5 text-sm font-semibold px-5 border-2 border-black duration-300 hover:bg-black hover:text-white "
+                        href="https://github.com/mdriyadmr968/HappyDocs"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View client side code
+                        <svg
+                          width={20}
+                          height={20}
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.0035 7.4083L5.41176 16L4 14.5882L12.5917 5.99654H5.01905V4H16V14.981H14.0035V7.4083Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full xl:max-h-[400px] lg:max-h-[300px] lg:order-2 order-1 overflow-hidden">
+                    <img
+                      alt=""
+                      fetchpriority="high"
+                      width={1000}
+                      height={750}
+                      decoding="async"
+                      data-nimg={1}
+                      className="object-cover w-full h-full mx-auto "
+                      style={{ color: "transparent" }}
+                      src="/images/happydoc.png"
+                    />
+                  </div>
+                </div>
+              </>
+            )}
             <div className="text-center aos-init" data-aos="fade-up">
               <button
                 onClick={() => {
@@ -215,7 +492,7 @@ const Projects = () => {
                 }}
                 className=" bg-black text-white py-4 px-5"
               >
-                {viewAll ? " View Less Project" : " View All Project"}
+                {viewAll ? " View Less Project" : " View More Project"}
               </button>
             </div>
           </div>

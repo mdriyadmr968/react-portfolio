@@ -99,7 +99,7 @@ const About = () => {
                   <ul class="flex flex-wrap items-center gap-5">
                     <li class="shrink-0">
                       <a
-                        href="https://www.linkedin.com/in/mohammad-syied-bin-salim-32136a227"
+                        href="https://www.linkedin.com/in/syied"
                         rel="noreferrer"
                         target="_blank"
                       >
