@@ -294,7 +294,7 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full lg:order-2 order-1">
+                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full xl:max-h-[400px] lg:max-h-[300px] lg:order-2 order-1 overflow-hidden">
                     <img
                       alt=""
                       fetchpriority="high"
@@ -393,7 +393,7 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full lg:order-2 order-1">
+                  <div className="xl:max-w-[670px] lg:max-w-[400px] w-full xl:max-h-[400px] lg:max-h-[300px] lg:order-2 order-1 overflow-hidden">
                     <img
                       alt=""
                       fetchpriority="high"
