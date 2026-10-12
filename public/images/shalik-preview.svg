@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060e0a" />
+      <stop offset="100%" stop-color="#030705" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#84cc16" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e1a14" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#09120e" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="28" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="750" fill="url(#bgGrad)" />
+
+  <!-- Grid Blueprint Lines -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="750" />
+    <line x1="400" y1="0" x2="400" y2="750" />
+    <line x1="600" y1="0" x2="600" y2="750" />
+    <line x1="800" y1="0" x2="800" y2="750" />
+    <line x1="1000" y1="0" x2="1000" y2="750" />
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="950" cy="180" r="260" fill="#10b981" opacity="0.12" filter="url(#softGlow)" />
+  <circle cx="200" cy="540" r="220" fill="#84cc16" opacity="0.08" filter="url(#softGlow)" />
+
+  <!-- Main Shell Container -->
+  <g transform="translate(60, 45)">
+    <rect width="1080" height="660" rx="16" fill="#070e0a" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+    
+    <!-- Window Header -->
+    <path d="M0 16 C0 7.16 7.16 0 16 0 L1064 0 C1072.84 0 1080 7.16 1080 16 L1080 48 L0 48 Z" fill="#0d1812" />
+    <line x1="0" y1="48" x2="1080" y2="48" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1" />
+
+    <!-- Window Dots -->
+    <circle cx="28" cy="24" r="5.5" fill="#ef4444" opacity="0.8" />
+    <circle cx="46" cy="24" r="5.5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="64" cy="24" r="5.5" fill="#10b981" opacity="0.8" />
+
+    <!-- URL Bar -->
+    <rect x="240" y="12" width="600" height="24" rx="6" fill="#050a07" stroke="#ffffff" stroke-opacity="0.08" />
+    <text x="540" y="28" fill="#6a8775" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">shalik-nine.vercel.app/edge-ai/on-device-diagnostics</text>
+
+    <!-- Sidebar -->
+    <g transform="translate(0, 48)">
+      <rect width="190" height="612" fill="#09130d" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" />
+      
+      <!-- Brand Logo -->
+      <g transform="translate(24, 26)">
+        <rect width="32" height="32" rx="8" fill="url(#emeraldGrad)" />
+        <path d="M16 8 C22 14 22 22 16 26 C10 22 10 14 16 8 Z" fill="#ffffff" />
+        <text x="42" y="22" fill="#ffffff" font-family="'Cinzel', serif" font-weight="bold" font-size="14">Shalik</text>
+      </g>
+
+      <!-- Sidebar Menu -->
+      <g transform="translate(18, 85)" font-family="'JetBrains Mono', monospace" font-size="11">
+        <rect x="0" y="0" width="154" height="32" rx="6" fill="#10b981" fill-opacity="0.18" stroke="#10b981" stroke-opacity="0.4" />
+        <text x="14" y="20" fill="#6ee7b7" font-weight="600">● Plant Vision AI</text>
+
+        <text x="14" y="58" fill="#688574">Gemma 3n SLM</text>
+        <text x="14" y="96" fill="#688574">Offline FTS5 RAG</text>
+        <text x="14" y="134" fill="#688574">Bengali Voice TTS</text>
+        <text x="14" y="172" fill="#688574">Pesticide Interceptor</text>
+        <text x="14" y="210" fill="#688574">BRRI/BARI Citations</text>
+      </g>
+
+      <!-- Air-Gapped Status Badge -->
+      <g transform="translate(18, 520)">
+        <rect width="154" height="60" rx="8" fill="#111f17" stroke="#10b981" stroke-opacity="0.25" />
+        <circle cx="16" cy="20" r="4" fill="#10b981" />
+        <text x="28" y="18" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">100% AIR-GAPPED OFFLINE</text>
+        <text x="16" y="36" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9">RAM BUDGET: &lt;2.14 GB</text>
+        <text x="16" y="50" fill="#6ee7b7" font-family="'JetBrains Mono', monospace" font-size="8">ZERO CLOUD CALLS</text>
+      </g>
+    </g>
+
+    <!-- Content Area -->
+    <g transform="translate(215, 68)">
+      <text x="0" y="22" fill="#ffffff" font-family="'Cinzel', serif" font-size="20" font-weight="bold">On-Device Edge Multimodal Farm Assistant</text>
+      <text x="0" y="42" fill="#6a8775" font-family="'JetBrains Mono', monospace" font-size="11">GEMMA 3N SLM (W4A16 LITERT) // EFFICIENTNET-LITE0 // OP-SQLITE FTS5</text>
+
+      <!-- KPI cards -->
+      <g transform="translate(0, 60)">
+        <!-- Classifier Latency -->
+        <g transform="translate(0, 0)">
+          <rect width="260" height="92" rx="10" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.08" />
+          <text x="16" y="26" fill="#71947e" font-family="'JetBrains Mono', monospace" font-size="10">VISION CLASSIFIER INFERENCE</text>
+          <text x="16" y="58" fill="#ffffff" font-family="'Cinzel', serif" font-size="24" font-weight="bold">38 ms</text>
+          <text x="16" y="78" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9">89.2% Top-1 Accuracy • EfficientNet-Lite0</text>
+        </g>
+
+        <!-- Offline RAG Search -->
+        <g transform="translate(275, 0)">
+          <rect width="275" height="92" rx="10" fill="url(#cardGrad)" stroke="#10b981" stroke-opacity="0.35" />
+          <text x="16" y="26" fill="#6ee7b7" font-family="'JetBrains Mono', monospace" font-size="10">OFFLINE RAG BM25 SEARCH</text>
+          <text x="16" y="54" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600">0.33 ms Latency</text>
+          <text x="16" y="76" fill="#a7f3d0" font-family="'JetBrains Mono', monospace" font-size="9">SQLite FTS5 • DAE, BRRI, BARI Citing</text>
+        </g>
+
+        <!-- Edge LLM Specs -->
+        <g transform="translate(565, 0)">
+          <rect width="275" height="92" rx="10" fill="url(#cardGrad)" stroke="#84cc16" stroke-opacity="0.35" />
+          <text x="16" y="26" fill="#a3e635" font-family="'JetBrains Mono', monospace" font-size="10">ON-DEVICE SLM RUNTIME</text>
+          <text x="16" y="54" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">GEMMA 3N (W4A16)</text>
+          <text x="16" y="76" fill="#71947e" font-family="'JetBrains Mono', monospace" font-size="9">LiteRT-LM JSI • Spoken Bengali Voice</text>
+        </g>
+      </g>
+
+      <!-- Bottom Split Panel -->
+      <g transform="translate(0, 175)">
+        <!-- Left: Leaf Disease Diagnosis -->
+        <g transform="translate(0, 0)">
+          <rect width="470" height="230" rx="12" fill="#0b1610" stroke="#ffffff" stroke-opacity="0.08" />
+          <text x="20" y="32" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">VisionCamera Real-Time Leaf Scan</text>
+          <text x="360" y="32" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10">ON-DEVICE</text>
+          <line x1="20" y1="46" x2="450" y2="46" stroke="#ffffff" stroke-opacity="0.05" />
+
+          <!-- Camera scan frame -->
+          <rect x="20" y="60" width="430" height="90" rx="8" fill="#112219" stroke="#10b981" stroke-opacity="0.3" />
+          <text x="36" y="85" fill="#6ee7b7" font-family="'JetBrains Mono', monospace" font-size="10">IDENTIFIED PATHOLOGY</text>
+          <text x="36" y="106" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="bold">Rice Blast (Pyricularia oryzae)</text>
+          <text x="36" y="128" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="10">CONFIDENCE: 94.6% • BARI Bulletin Guideline Citations Attached</text>
+
+          <!-- Voice output -->
+          <rect x="20" y="162" width="430" height="50" rx="8" fill="#13261c" stroke="#ffffff" stroke-opacity="0.06" />
+          <text x="36" y="182" fill="#a7f3d0" font-family="'JetBrains Mono', monospace" font-size="10">SPOKEN BENGALI TTS SYNTHESIS</text>
+          <text x="36" y="198" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11">&quot;ধানের ব্লাস্ট রোগ শনাক্ত হয়েছে। অনুমোদিত ছত্রাকনাশক ব্যবহার করুন।&quot;</text>
+        </g>
+
+        <!-- Right: Rule-based Interceptor -->
+        <g transform="translate(485, 0)">
+          <rect width="355" height="230" rx="12" fill="#0b1610" stroke="#ffffff" stroke-opacity="0.08" />
+          <text x="20" y="32" fill="#84cc16" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">Safety &amp; Interceptor Guard</text>
+          <line x1="20" y1="46" x2="335" y2="46" stroke="#ffffff" stroke-opacity="0.05" />
+
+          <g transform="translate(20, 60)" font-family="'JetBrains Mono', monospace" font-size="10">
+            <rect width="315" height="36" rx="6" fill="#14261c" />
+            <circle cx="16" cy="18" r="4" fill="#ef4444" />
+            <text x="28" y="22" fill="#fca5a5">Banned Pesticide Interceptor: ACTIVE</text>
+
+            <rect y="44" width="315" height="36" rx="6" fill="#14261c" />
+            <circle cx="16" cy="62" r="4" fill="#10b981" />
+            <text x="28" y="66" fill="#e2e8f0">Official BRRI Advisory: ATTACHED</text>
+
+            <rect y="88" width="315" height="48" rx="6" fill="#192f23" stroke="#10b981" stroke-opacity="0.3" />
+            <text x="12" y="106" fill="#6ee7b7">AIR-GAPPED TELEMETRY:</text>
+            <text x="12" y="122" fill="#ffffff">0 bytes transmitted. Farmer data preserved.</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

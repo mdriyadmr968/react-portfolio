@@ -27,26 +27,35 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mohammad Syied Bin Salim — Software Engineer",
+  title: "Mohammad Syied Bin Salim — Software Engineer | Enterprise SaaS • Web3 • AI",
   description:
-    "Portfolio of Mohammad Syied Bin Salim — Software Engineer at XPONENT InfoSystem specializing in high-fidelity React, Next.js, and decentralized Web3 applications.",
+    "Portfolio of Mohammad Syied Bin Salim — Software Engineer specializing in enterprise multi-tenant SaaS ERP platforms, double-entry accounting engines, Web3 fintech wallets, and AI integrations.",
   keywords: [
     "Mohammad Syied Bin Salim",
     "Syied Bin Salim",
     "Software Engineer",
     "XPONENT InfoSystem",
-    "Frontend Engineer",
-    "React Developer",
+    "Tale Wallet",
+    "Enterprise SaaS",
+    "Multi-Tenant ERP",
+    "Double-Entry Accounting",
+    "React",
     "Next.js",
-    "Web3 Developer",
-    "Creative Developer",
-    "Portfolio",
+    "TypeScript",
+    "PostgreSQL",
+    "Prisma",
+    "Viem",
+    "Web3",
+    "ThinPay Wallet",
+    "LearnStratum",
+    "Shalik",
+    "Chattogram Bangladesh",
   ],
   authors: [{ name: "Mohammad Syied Bin Salim" }],
   openGraph: {
-    title: "Mohammad Syied Bin Salim — Software Engineer",
+    title: "Mohammad Syied Bin Salim — Software Engineer | Enterprise SaaS • Web3 • AI",
     description:
-      "Crafting intuitive, high-impact digital experiences across web, mobile, and enterprise platforms.",
+      "Engineering enterprise multi-tenant SaaS ERP platforms, Web3 fintech wallets, and autonomous AI systems.",
     type: "website",
   },
 };

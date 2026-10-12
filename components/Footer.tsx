@@ -61,23 +61,23 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-sans text-xs text-[#7e859b] max-w-sm leading-relaxed">
-              Crafting high-fidelity digital systems, reactive web applications, and decentralized
-              architectures with deliberate typography and motion.
+              Engineering enterprise multi-tenant SaaS ERP platforms, double-entry accounting engines,
+              Web3 fintech wallets, and autonomous AI systems.
             </p>
           </div>
 
           {/* Col 2: Live Local Time & Location */}
           <div className="md:col-span-3 flex flex-col space-y-2 font-technical">
             <span className="text-[10px] uppercase tracking-widest text-[#5e6477]">
-              LOCAL TIME // ASIA
+              LOCAL TIME // CHATTOGRAM (GMT+6)
             </span>
             <div className="flex items-center gap-2 text-sm font-semibold text-white">
               <Clock className="h-3.5 w-3.5 text-[#994ff5]" />
               <span>{timeString || "00:00:00 AM"}</span>
-              <span className="text-[10px] text-[#798096] font-normal">GMT+6</span>
+              <span className="text-[10px] text-[#798096] font-normal">BST</span>
             </div>
             <span className="text-xs text-[#7e859b]">
-              Available for Global Remote &amp; On-Site Deployments
+              Available for Global Remote &amp; Strategic Engineering Contracts
             </span>
           </div>
 

@@ -45,15 +45,15 @@ export default function ContactSection() {
 
           {/* Main Headline */}
           <h2 className="font-editorial text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white max-w-3xl mx-auto leading-tight">
-            LET&apos;S CRAFT THE NEXT <br />
+            LET&apos;S ENGINEER THE NEXT <br />
             <span className="bg-gradient-to-r from-white via-[#d4bbfc] to-[#994ff5] bg-clip-text text-transparent">
-              DIGITAL FRONTIER.
+              HIGH-IMPACT SYSTEM.
             </span>
           </h2>
 
           <p className="mt-4 max-w-xl mx-auto font-sans text-sm sm:text-base text-[#9197ab] leading-relaxed">
-            Whether you are envisioning a pioneering Web3 platform, a reactive mobile app, or a
-            meticulous frontend overhaul, my inbox is always open.
+            Whether you are architecting a multi-tenant enterprise ERP platform, a Web3 fintech wallet, or
+            an autonomous AI application, my inbox is always open.
           </p>
 
           {/* Interactive Email Copy Button Bar */}
@@ -93,6 +93,16 @@ export default function ContactSection() {
           {/* Alternative CTAs */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6 pt-6 border-t border-white/[0.08] text-xs font-technical uppercase tracking-wider text-[#82889e]">
             <a
+              href={siteConfig.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white flex items-center gap-1.5 transition-colors text-white/90"
+            >
+              <FileDown className="h-3.5 w-3.5 text-[#994ff5]" />
+              <span>DOWNLOAD RESUME (PDF)</span>
+            </a>
+            <span className="text-white/20">•</span>
+            <a
               href={siteConfig.upworkUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -103,13 +113,13 @@ export default function ContactSection() {
             </a>
             <span className="text-white/20">•</span>
             <a
-              href={siteConfig.resumeUrl}
+              href={siteConfig.socials.github}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white flex items-center gap-1.5 transition-colors"
             >
-              <span>DIRECT RESUME PDF</span>
-              <FileDown className="h-3.5 w-3.5" />
+              <span>GITHUB</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-[#994ff5]" />
             </a>
           </div>
         </motion.div>

@@ -34,9 +34,21 @@ export default function Hero() {
   };
 
   const capabilities = [
-    { num: "01", title: "Full-Stack Web & Next.js", detail: "React, Next.js, TypeScript, Tailwind CSS, SSR/SSG" },
-    { num: "02", title: "Decentralized Protocols & DeFi", detail: "Web3.js, Ethers.js, Multi-Chain (5+ Chains)" },
-    { num: "03", title: "Enterprise Systems & Mobile", detail: "React Native, Electron, Prisma, PostgreSQL, MongoDB" },
+    {
+      num: "01",
+      title: "Enterprise SaaS & Multi-Tenancy",
+      detail: "Schema-per-Tenant ERP, Double-Entry GL, Dynamic Pooling, Granular RBAC",
+    },
+    {
+      num: "02",
+      title: "Full-Stack React, Next.js & Mobile",
+      detail: "Next.js 15, TypeScript, React Native, Redux Toolkit, Prisma, PostgreSQL",
+    },
+    {
+      num: "03",
+      title: "Web3 Protocols & AI Engineering",
+      detail: "Viem, Ethers.js, ERC-4337, 0x Swap, Google Gemini, pgvector (RAG)",
+    },
   ];
 
   return (
@@ -58,7 +70,7 @@ export default function Hero() {
           animate="visible"
           className="flex flex-col items-start"
         >
-          {/* Main Headline with Reduced, Balanced Editorial Serif Typography */}
+          {/* Main Headline */}
           <motion.div variants={itemVariants} className="w-full">
             <h1 className="font-editorial text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] max-w-5xl">
               CRAFTING <br />
@@ -66,7 +78,7 @@ export default function Hero() {
                 HIGH-FIDELITY
               </span>{" "}
               <br />
-              DIGITAL SYSTEMS.
+              ENTERPRISE &amp; AI SYSTEMS.
             </h1>
           </motion.div>
 
@@ -77,13 +89,13 @@ export default function Hero() {
           >
             <div className="lg:col-span-7 space-y-4">
               <p className="font-sans text-base sm:text-lg text-[#a2a8ba] leading-relaxed font-light">
-                Engineering performant web architectures, decentralized finance solutions, and
-                cross-platform mobile apps where robust code logic meets refined micro-interactions.
+                Software Engineer with 3+ years of experience engineering enterprise multi-tenant SaaS ERP platforms,
+                fintech solutions (crypto wallets), and full-stack web applications.
               </p>
               <p className="font-sans text-sm text-[#747a8e] leading-relaxed max-w-2xl">
-                Proficient in modern frontend frameworks with a strong focus on React, Next.js, and
-                blockchain integration. Proven track record in developing user-centric solutions for
-                fintech and edtech platforms in collaborative Agile environments.
+                Strong in React, Next.js, TypeScript, Node.js, and PostgreSQL (Prisma), with proven production delivery
+                in schema-isolated multi-tenancy, double-entry accounting engines, and AI/LLM integrations.
+                Currently engineering core architecture for ERP at <strong>XPONENT InfoSystem</strong>.
               </p>
             </div>
 
@@ -145,23 +157,23 @@ export default function Hero() {
               </a>
 
               <a
-                href={siteConfig.upworkUrl}
+                href={siteConfig.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:border-[#994ff5]/60 hover:bg-[#994ff5]/15"
+                className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/[0.04] px-6 py-3.5 text-xs font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:border-[#994ff5]/60 hover:bg-[#994ff5]/15"
               >
-                <span>HIRE ON UPWORK</span>
-                <ArrowUpRight className="h-4 w-4 text-[#994ff5] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <FileDown className="h-4 w-4 text-[#994ff5]" />
+                <span>DOWNLOAD RESUME</span>
               </a>
 
               <a
-                href={siteConfig.resumeUrl}
+                href={siteConfig.upworkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-transparent px-5 py-3.5 text-xs font-technical uppercase tracking-wider text-[#9aa0b4] transition-all duration-300 hover:border-white/25 hover:text-white"
               >
-                <FileDown className="h-4 w-4" />
-                <span>DOWNLOAD RESUME</span>
+                <span>HIRE ON UPWORK</span>
+                <ArrowUpRight className="h-4 w-4" />
               </a>
             </div>
 

@@ -3,7 +3,8 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { Project } from "@/lib/data";
-import { ArrowUpRight, Building2 } from "lucide-react";
+import { ArrowUpRight, Building2, Sparkles } from "lucide-react";
+import { GithubIcon } from "./Icons";
 import { motion } from "framer-motion";
 
 interface ProjectCardProps {
@@ -31,7 +32,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       initial={{ opacity: 0, y: 35 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] as const }}
+      transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] as const }}
       className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0b0d16]/80 p-6 lg:p-8 backdrop-blur-xl transition-all duration-500 hover:border-white/20 hover:shadow-[0_10px_40px_rgba(0,0,0,0.6)]"
     >
       {/* Dynamic Holographic Mouse Spotlight Surface */}
@@ -68,11 +69,16 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             </span>
           </div>
 
-          {/* Workplace Contribution Badge */}
-          {project.workplaceContributionNote && (
+          {/* Project Origin Badge */}
+          {project.workplaceContributionNote ? (
             <span className="inline-flex items-center gap-1.5 rounded-full border border-violet-500/35 bg-violet-500/10 px-3 py-1 font-technical text-[10px] font-semibold uppercase tracking-wider text-violet-300">
               <Building2 className="h-3 w-3 text-violet-400" />
               <span>{project.workplaceContributionNote}</span>
+            </span>
+          ) : (
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/35 bg-emerald-500/10 px-3 py-1 font-technical text-[10px] font-semibold uppercase tracking-wider text-emerald-300">
+              <Sparkles className="h-3 w-3 text-emerald-400" />
+              <span>FEATURED BUILD</span>
             </span>
           )}
         </div>
@@ -98,7 +104,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             </h3>
             {project.liveUrl && (
               <span className="font-technical text-[11px] text-[#787f94] uppercase tracking-wider">
-                {new URL(project.liveUrl).hostname}
+                {new URL(project.liveUrl).hostname.replace("www.", "")}
               </span>
             )}
           </div>
@@ -112,7 +118,22 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {project.description}
         </p>
 
-        {/* Workplace Contribution Quote */}
+        {/* Technical Highlights / Bullet Points */}
+        {project.highlights && project.highlights.length > 0 && (
+          <ul className="mt-4 space-y-2 border-l border-white/10 pl-3.5">
+            {project.highlights.map((highlight, hIdx) => (
+              <li
+                key={hIdx}
+                className="font-sans text-xs text-[#8c93a8] flex items-start gap-2 leading-relaxed"
+              >
+                <span className="text-[#994ff5] shrink-0 mt-0.5">•</span>
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {/* Extended Workplace Contribution Note */}
         {project.extendedDescription && (
           <div className="mt-4 rounded-xl border-l-2 border-[#994ff5] bg-white/[0.02] p-3 text-xs text-[#b8bfd6] leading-relaxed italic">
             &quot;{project.extendedDescription}&quot;
@@ -120,7 +141,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         )}
 
         {/* Technologies Grid */}
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-6 flex flex-wrap gap-1.5">
           {project.technologies.map((tech) => (
             <span
               key={tech}
@@ -134,17 +155,31 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
       {/* Bottom Actions Toolbar */}
       <div className="mt-8 flex flex-wrap items-center justify-between gap-3 pt-5 border-t border-white/[0.06]">
-        {project.liveUrl && (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/[0.05] px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:border-white/40 hover:bg-white/[0.1] hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]"
-          >
-            <span>VISIT LIVE PLATFORM</span>
-            <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
-        )}
+        <div className="flex flex-wrap items-center gap-3">
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/[0.05] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:border-white/40 hover:bg-white/[0.1] hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]"
+            >
+              <span>LIVE DEMO</span>
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          )}
+
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.02] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#b1b7cb] transition-all duration-300 hover:border-white/30 hover:bg-white/[0.07] hover:text-white"
+            >
+              <GithubIcon className="h-3.5 w-3.5" />
+              <span>GITHUB</span>
+            </a>
+          )}
+        </div>
 
         <div className="flex items-center gap-2 font-technical text-[11px] text-[#636a7e]">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
